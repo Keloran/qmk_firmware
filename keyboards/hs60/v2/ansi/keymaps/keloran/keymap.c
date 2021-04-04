@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |----------------------------------------------------------------------------------------------------------------------|
 * |    Tab    |       |       |       |       |       |       |       |       |       |       |       |       |          |
 * |----------------------------------------------------------------------------------------------------------------------|
-* |            |       |       |       |       |       |       |       |       |       |       |       |      Enter      |
+* |            |RGB_TOG|RGB_MOD|       |       |       |       |       |       |       |       |       |      Enter      |
 * |----------------------------------------------------------------------------------------------------------------------|
 * |     Shift      |       |       |       |       |       |       |       |       |       |       |       Shift         |
 * |----------------------------------------------------------------------------------------------------------------------|
@@ -104,9 +104,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ADJUST] = LAYOUT_60_ansi(
         RESET,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_TRNS,
         KC_TRNS, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,          KC_TRNS,
+        KC_NO,   RGB_TOG, RGB_MOD, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,          KC_TRNS,
         KC_TRNS, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,                   KC_TRNS,
-        RGB_TOG, KC_TRNS, KC_TRNS,               KC_TRNS,                      KC_TRNS, KC_TRNS,        KC_TRNS, KC_TRNS
+        KC_TRNS, KC_TRNS, KC_TRNS,               KC_TRNS,                      KC_TRNS, KC_TRNS,        KC_TRNS, KC_TRNS
     ),
 };
 
