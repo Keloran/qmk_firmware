@@ -1,0 +1,5 @@
+COMBO_ENABLE = no
+CONSOLE_ENABLE = no
+BOOTLOADER = atmel-dfu
+BIT_C = yes
+RGBLIGHT_ENABLE = no

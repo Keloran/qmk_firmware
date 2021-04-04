@@ -1,0 +1,4 @@
+MCU = atmega32u2
+BOOTLOADER = atmel-dfu
+LEADER_ENABLE = yes
+CONSOLE_ENABLE = no
