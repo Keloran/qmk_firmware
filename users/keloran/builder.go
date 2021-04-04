@@ -7,6 +7,7 @@ import (
     "flag"
     "os"
     "os/exec"
+    "sort"
     "path/filepath"
     "log"
     "strings"
@@ -132,6 +133,7 @@ func main() {
 
     if *list {
         boards, err := getBoardNames()
+        sort.Strings(boards)
         if err != nil {
             fmt.Printf("list - getBoardNames: %w\n", err)
             return
