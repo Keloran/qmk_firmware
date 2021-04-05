@@ -25,21 +25,27 @@ jobs:
         run: go build users/keloran/builder.go
       - name: Keyboards
         run: ./builder -all
-      - uses: actions/upload-artifact@v2
+#      - name: Zip Builds
+#        run: |
+#            zip keyboards.zip \
+#              sofle_rev1_keloran.hex \
+#              lily58_rev1_keloran.hex \
+#              qaz_keloran.hex \
+#              ut472_keloran.hex \
+#              nullbitsco_nibble_keloran.hex \
+#              evyd13_pockettype_keloran.hex \
+#              planck_ez_glow_keloran.bin \
+#              hs60_v2_ansi_keloran.bin \
+#              mechwild_mercutio_keloran.hex \
+#              40percentclub_gherkin_keloran.hex \
+#              ymdk_np21_keloran.hex \
+#              yd60mq_12led_keloran.hex \
+#              ymdk_ymd09_32a_keloran.hex \
+#              dz60_keloran.hex \
+#              peej_lumberjack_keloran.hex
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
         with:
           path: |
-            sofle_rev1_keloran.hex
-            lily58_rev1_keloran.hex
-            qaz_keloran.hex
-            ut472_keloran.hex
-            nullbitsco_nibble_keloran.hex
-            evyd13_pockettype_keloran.hex
-            planck_ez_glow_keloran.bin
-            hs60_v2_ansi_keloran.bin
-            mechwild_mercutio_keloran.hex
-            40percentclub_gherkin_keloran.hex
-            ymdk_np21_keloran.hex
-            yd60mq_12led_keloran.hex
-            ymdk_ymd09_32a_keloran.hex
-            dz60_keloran.hex
-            peej_lumberjack_keloran.hex
+            *.hex
+            *.bin
