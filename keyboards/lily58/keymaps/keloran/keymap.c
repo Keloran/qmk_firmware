@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------.                    ,--------------------------------------------.
  * |      |      |Qwerty |Workman|      |       |                    |       |      |      | OLD FPS | CIV  |     |
  * |------+------+-------+-------+------+-------|                    |-------+------+------+---------+------+-----|
- * | ORYX |      |       |       |      | RESET |                    | RESET |      |      |LOCK SCN |      |     |
+ * |      |      |       |       |      | RESET |                    | RESET |      |      |LOCK SCN |      |     |
  * |------+------+-------+-------+------+-------|                    |-------+------+------+---------+------+-----|
  * |      |      |       |       |      |       |-------.    ,-------|       | MUTE |      |         |      |
  * |------+------+-------+-------+------+-------|       |    |       |-------+------+------+---------+------+-----|
@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
     [_ADJUST] = LAYOUT(
         KC_NO,       KC_NO, QWERTY_LAYER, WORKMAN_LAYER, KC_NO, KC_NO,                       KC_NO,      KC_NO,    KC_NO, OLDFPS_LAYER, CIV_LAYER,   KC_NO,
-        WEBUSB_PAIR, KC_NO, KC_NO,        KC_NO,         KC_NO, RESET,                       RESET,      KC_NO,    KC_NO, LOCK_SCREEN,  KC_NO,       KC_NO,
+        KC_NO,       KC_NO, KC_NO,        KC_NO,         KC_NO, RESET,                       RESET,      KC_NO,    KC_NO, LOCK_SCREEN,  KC_NO,       KC_NO,
         KC_NO,       KC_NO, KC_NO,        KC_NO,         KC_NO, KC_NO,                       KC_NO,      KC__MUTE, KC_NO, KC_NO,        KC_NO,       KC_NO,
         KC_CAPSLOCK, KC_NO, KC_NO,        KC_NO,         KC_NO, KC_NO,      KC_NO,    KC_NO, KC_NO,      KC_NO,    KC_NO, KC_NO,        KC_NO,       KC_NO,
                                           KC_NO,         KC_NO, MO(_LOWER), KC_NO,    KC_NO, MO(_RAISE), KC_NO,    KC_NO

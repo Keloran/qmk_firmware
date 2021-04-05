@@ -10,8 +10,8 @@ void rgb_led_state(uint8_t caps_state) {
         rgblight_enable();
     }
 
-    rgblight_set_layer_state(3, !led_state.caps_lock);
-    rgblight_set_layer_state(0, led_state.caps_lock);
+    rgblight_set_layer_state(3, !caps_state);
+    rgblight_set_layer_state(0, caps_state);
 }
 
 void rgb_layer_colors(layer_state_t state) {

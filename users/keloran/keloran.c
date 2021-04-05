@@ -71,7 +71,7 @@ void switch_layer(uint16_t keycode) {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
 #ifdef RGBLIGHT_LAYERS
-    rgb_layer_colors(layer_state_t state);
+    rgb_layer_colors(state);
 #endif
 
     return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);

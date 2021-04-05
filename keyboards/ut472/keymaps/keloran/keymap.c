@@ -84,14 +84,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |------+------+-------+------+------+-------+------+------+------+------+------+------|
 * |      |      |       |      |      |       |      |      |      |      |      |      |
 * |------+------+-------+------+------+-------+------+------+------+------+------+------|
-* |      | Oryx |       |      |  ⇩  |              |  ⇩   |      |      |      |      |
+* |      |      |       |      |  ⇩  |              |  ⇩   |      |      |      |      |
 * `-------------------------------------------------------------------------------------'
 */
     [_ADJUST] = LAYOUT(
-        MO(_MISC), KC_NO,       WORKMAN_LAYER, OLDFPS_LAYER, KC_NO,      OSL(_FKEYS), KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, RESET,
-        KC_NO,     KC_NO,       QWERTY_LAYER,  CIV_LAYER,    KC_NO,      KC_NO,       KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO,     KC_NO,       KC_NO,         KC_NO,        KC_NO,      KC_NO,       KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO,     WEBUSB_PAIR, KC_NO,         KC_NO,        MO(_LOWER), KC_NO,              MO(_RAISE), KC_NO, KC_NO, KC_NO, KC_NO
+        MO(_MISC), KC_NO, WORKMAN_LAYER, OLDFPS_LAYER, KC_NO,      OSL(_FKEYS), KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, RESET,
+        KC_NO,     KC_NO, QWERTY_LAYER,  CIV_LAYER,    KC_NO,      KC_NO,       KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO,     KC_NO, KC_NO,         KC_NO,        KC_NO,      KC_NO,       KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO,     KC_NO, KC_NO,         KC_NO,        MO(_LOWER), KC_NO,              MO(_RAISE), KC_NO, KC_NO, KC_NO, KC_NO
     ),
 
 /* Function Keys
