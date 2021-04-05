@@ -6,7 +6,7 @@
 #include "keloran.h"
 #include "tap_dance.h"
 #include "rgb.h"
-#include "encoder.h"
+#include "rotary.h"
 #include "bitc.h"
 #include "oled.h"
 

@@ -1,6 +1,6 @@
 #include QMK_KEYBOARD_H
 
-#include "encoder.h"
+#include "rotary.h"
 
 #ifdef ENCODER_ENABLE
 void encoder_update_user(uint8_t index, bool clockwise) {

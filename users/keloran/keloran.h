@@ -3,7 +3,7 @@
 #include "bitc.h"
 #include "tap_dance.h"
 #include "rgb.h"
-#include "encoder.h"
+#include "rotary.h"
 #include "oled.h"
 
 // Words Per Minute

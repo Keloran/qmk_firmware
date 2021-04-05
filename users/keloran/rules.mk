@@ -19,5 +19,5 @@ SRC += ./keloran.c
 SRC += ./oled.c
 SRC += ./bitc.c
 SRC += ./tap_dance.c
-SRC += ./encoder.c
+SRC += ./rotary.c
 SRC += ./rgb.c
