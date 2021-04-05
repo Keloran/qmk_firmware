@@ -14,6 +14,7 @@ on:
 
 jobs:
   test:
+    if: github.repository == 'qmk/qmk_firmware'
     runs-on: ubuntu-latest
 
     container: qmkfm/base_container

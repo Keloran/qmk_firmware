@@ -1,0 +1,14 @@
+name: Keloran
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  images:
+    if: github.repository == 'keloran/qmk_firmware'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
