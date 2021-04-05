@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-verison: '1.16.x'
+      - name: qmk setup
+        run: util/qmk_install.sh
       - name: File Link
         run: |
           ln -s users/keloran/builder.txt .
