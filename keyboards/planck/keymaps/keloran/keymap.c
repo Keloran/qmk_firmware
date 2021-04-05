@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * | Ctrl | Lead | Alt  | GUI  |Lower |    Space    |Raise |   /  | Left | Down |Right |
 * `-----------------------------------------------------------------------------------'
 */
-  [_QWERTY] = LAYOUT_planck_grid(
+  [_QWERTY] = LAYOUT_ortho_4x12(
         KC_Q,      KC_W,    KC_E,    KC_R,    KC_T,       KC_TAB,    KC_BSPACE, KC_Y,       KC_U,     KC_I,     KC_O,   KC_P,
         KC_A,      KC_S,    KC_D,    KC_F,    KC_G,       KC_ESCAPE, KC_QUOTE,  KC_H,       KC_J,     KC_K,     KC_L,   KC_SCOLON,
         KC_Z,      KC_X,    KC_C,    KC_V,    KC_B,       KC_LSHIFT, KC_ENTER,  KC_N,       KC_M,     KC_COMMA, KC_DOT, KC_SLASH,
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Caps |      |      |      |  ⇩   |      ⇩     |  ⇩  |   \  |  ⇩   |  ⇩  |  ⇩  |
  * `-----------------------------------------------------------------------------------'
  */
-  [_LOWER] = LAYOUT_planck_grid(
+  [_LOWER] = LAYOUT_ortho_4x12(
         KC_TILD,     KC_EXLM,         KC_AT,   LALT(KC_3), KC_DLR,      KC_PERC,  KC_CIRC, KC_AMPR,    KC_LPRN,   KC_RPRN, KC_ASTR, KC_TRNS,
         KC_PIPE,     KC_NONUS_BSLASH, KC_HYPR, KC_HASH,    KC_KP_EQUAL, KC_NO,    KC_NO,   KC_UNDS,    KC_LCBR,   KC_RCBR, KC_PLUS, KC_GRAVE,
         KC_NO,       KC_NONUS_HASH,   KC_MEH,  KC_NO,      KC_NO,       KC_NO,    KC_NO,   KC_EQUAL,   KC_MINUS,  KC_NO,   KC_TRNS, KC_NO,
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |      |      |      |      |   ⇩  |      ⇩     |  ⇩  |      |      |      |      |
 * `-----------------------------------------------------------------------------------'
 */
-  [_RAISE] = LAYOUT_planck_grid(
+  [_RAISE] = LAYOUT_ortho_4x12(
         KC_GRAVE,  KC_PERC,  KC_AMPR, KC_QUES,  KC_PLUS,    KC_AT,    KC_DLR,    KC_UNDS,    KC_LBRACKET, KC_RBRACKET, KC_EXLM,  KC_TRNS,
         KC_DELETE, KC_SLASH, KC_LPRN, KC_EQUAL, KC_0,       KC_LCBR,  KC_RCBR,   KC_1,       KC_ASTR,     KC_RPRN,     KC_MINUS, KC_KP_DOT,
         KC_NO,     KC_6,     KC_7,    KC_8,     KC_9,       KC_PIPE,  KC_BSLASH, KC_2,       KC_3,        KC_4,        KC_5,     KC_NO,
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |      | Oryx |       |      |   ⇩  |             |  ⇩   | RGB+ | RGB- |      |      |
 * `-------------------------------------------------------------------------------------'
 */
-    [_ADJUST] = LAYOUT_planck_grid(
+    [_ADJUST] = LAYOUT_ortho_4x12(
         MO(_MISC), KC_NO,       WORKMAN_LAYER, OLDFPS_LAYER, KC_NO,      OSL(_FKEYS), KC_NO, KC_NO,      KC_NO,   KC_NO,   KC_NO, RESET,
         KC_NO,     KC_NO,       QWERTY_LAYER,  CIV_LAYER,    KC_NO,      KC_NO,       KC_NO, RGB_TOG,    RGB_VAI, RGB_VAD, KC_NO, KC_NO,
         KC_NO,     KC_NO,       KC_NO,         KC_NO,        KC_NO,      KC_NO,       KC_NO, RGB_MOD,    RGB_HUI, RGB_HUD, KC_NO, KC_NO,
@@ -93,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * | Ctrl |      |      |      |  ⇩   |    Space    |   ⇩  |      |      |      |      |
 * `------------------------------------------------------------------------------------'
 */
-  [_OLDFPS] = LAYOUT_planck_grid(
+  [_OLDFPS] = LAYOUT_ortho_4x12(
         KC_NO,     KC_NO,   KC_UP,   KC_NO,    KC_NO,      KC_NO,    KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
         KC_ESC,    KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO,      KC_NO,    KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
         KC_LSHIFT, KC_NO,   KC_NO,   KC_NO,    KC_NO,      KC_NO,    KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_ENTER,
@@ -111,7 +111,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |      |      |      |      |   ⇩  |             |   ⇩  |      |      |      |      |
 * `------------------------------------------------------------------------------------'
 */
-  [_FKEYS] = LAYOUT_planck_grid(
+  [_FKEYS] = LAYOUT_ortho_4x12(
         KC_NO, KC_NO,  KC_NO,  KC_NO,  KC_NO,      KC_NO,  KC_NO,  KC_NO,      KC_NO,  KC_NO,  KC_NO,  KC_NO,
         KC_NO, KC_F1,  KC_F2,  KC_F3,  KC_F4,      KC_F5,  KC_F6,  KC_F7,      KC_F8,  KC_F9,  KC_F10, KC_NO,
         KC_NO, KC_F11, KC_F12, KC_F13, KC_F14,     KC_F15, KC_F16, KC_F17,     KC_F18, KC_F19, KC_F20, KC_NO,
@@ -129,7 +129,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * | Ctrl | Lead | Alt  | GUI  |   ⇩  |    Space   |   ⇩  | Left | Down |  Up  |Right |
 * `-----------------------------------------------------------------------------------'
 */
-    [_WORKMAN] = LAYOUT_planck_grid(
+    [_WORKMAN] = LAYOUT_ortho_4x12(
         KC_TAB,    KC_Q,     KC_D,    KC_R,    KC_W,       KC_B,     KC_J,  KC_F,       KC_U,     KC_P,    KC_SCOLON, KC_BSPACE,
         KC_ESCAPE, KC_A,     KC_S,    KC_H,    KC_T,       KC_G,     KC_Y,  KC_N,       KC_E,     KC_O,    KC_I,      KC_QUOTE,
         KC_LSFT,   KC_Z,     KC_X,    KC_M,    KC_C,       KC_V,     KC_K,  KC_L,       KC_COMMA, KC_DOT,  KC_SLASH,  KC_ENTER,
@@ -147,7 +147,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |      |      |      |      |   ⇩  |           |   ⇩  |      |      |      |      |
 * `----------------------------------------------------------------------------------'
 */
-    [_MISC] = LAYOUT_planck_grid(
+    [_MISC] = LAYOUT_ortho_4x12(
         LINUX_TERM1, LINUX_TERM2, LINUX_GUI, KC_NO, KC_NO,      KC_NO,    KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
         KC_NO,       KC_NO,       KC_NO,     KC_NO, KC_NO,      KC_NO,    KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_PGUP,
         KC_NO,       KC_NO,       KC_NO,     KC_NO, KC_NO,      KC_NO,    KC_NO, KC_NO,      KC_NO, KC_NO, KC_NO, KC_PGDN,
