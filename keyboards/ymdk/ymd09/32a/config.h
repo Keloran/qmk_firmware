@@ -24,6 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     /* USB Device descriptor parameter */
     #define VENDOR_ID 0x594D // "YM"
     #define PRODUCT_ID 0x4409 // "D" + 09
+    #undef DEVICE_VER
     #define DEVICE_VER 0x0002
     #define MANUFACTURER YMDK
     #define PRODUCT YMD09

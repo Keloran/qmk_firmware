@@ -3,13 +3,13 @@ lily58,
 qaz,
 ut472,
 nibble,nullbitsco/nibble
-pocket,evyd14/pockettype
+pocket,evyd13/pockettype
 planck,planck/ez/glow
 hs60,hs60/v2/ansi
 mercutio,mechwild/mercutio
 gherkin,40percentclub/gherkin
 numpad,ymdk_np21
 satan,yd60mq
-macro,ymdk/ymd09/rev2
+macro,ymdk/ymd09/32a
 dz60,
 lumberjack,peej/lumberjack
