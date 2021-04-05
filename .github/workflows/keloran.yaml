@@ -13,3 +13,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - uses: textbook/git-checkout-submodule-action@master
+      - uses: actions/setup-go@v2
+        with:
+          go-verison: '1.16.x'
+      - name: File Link
+        run: |
+          ln -s users/keloran/builder.txt .
+          go build users/keloran/builder.go
+          ./builder sofle
