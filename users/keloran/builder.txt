@@ -15,3 +15,4 @@ dz60,
 lumberjack,peej/lumberjack
 kawa,cbkbd/kawa
 grandiceps,tkw/grandiceps
+isopad,magpie/isopad
