@@ -110,7 +110,10 @@ void custom_funcs(uint16_t keycode) {
             lock_screen();
             break;
         case POUND_SIGN:
-            send_pound_sign();
+            send_pound_sign(99);
+            break;
+        case POUND_SIGN_WIN:
+            send_pound_sign(_WindowsOS);
             break;
         case MEET_MUTE:
             send_meet_mute();
@@ -135,12 +138,17 @@ void send_arrow_operator(void) {
 void send_go_channel(void) {
     SEND_STRING("<-");
 }
-void send_pound_sign(void) {
-    if (myOperatingSys == _macOS) {
+void send_pound_sign(int OS) {
+    int useOS = myOperatingSys;
+    if (OS != 99) {
+        useOS = OS;
+    }
+
+    if (useOS == _macOS) {
         tap_code16(A(KC_3));
     }
 
-    if (myOperatingSys == _WindowsOS) {
+    if (useOS == _WindowsOS) {
         register_code(KC_LALT);
         register_code(KC_P0);
         unregister_code(KC_P0);

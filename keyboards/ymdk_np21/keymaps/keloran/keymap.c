@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-------+-------+-------+-------|
 * |       |   £   |       |       |
 * |-------+-------+-------|       |
-* |       |       |       |       |
+* |       |   £   |       |       |
 * |-------+-------+-------+-------|
 * |MeetMic|       |MeetCam|       |
 * |---------------+-------|       |
@@ -81,11 +81,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUMPAD_MACROS] = LAYOUT_numpad_6x4(
         KC_TRNS,   KC_TRNS,    KC_TRNS,     KC_TRNS,
 
-        KC_TRNS,   KC_NO,      KC_NO,       KC_DEL,
-        KC_NO,     POUND_SIGN, KC_NO,
-        KC_LEFT,   KC_NO,      KC_NO,       KC_NO,
-        MEET_MUTE, KC_DOWN,    MEET_CAMERA,
-        MAC_EXPOSE,            KC_NO,       KC_TRNS
+        KC_TRNS,   KC_NO,          KC_NO,       KC_DEL,
+        KC_NO,     POUND_SIGN,     KC_NO,
+        KC_LEFT,   POUND_SIGN_WIN, KC_NO,       KC_NO,
+        MEET_MUTE, KC_DOWN,        MEET_CAMERA,
+        MAC_EXPOSE,                KC_NO,       KC_TRNS
     ),
 
 /* Numpad Extra
