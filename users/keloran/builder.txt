@@ -16,3 +16,4 @@ lumberjack,peej/lumberjack
 kawa,cbkbd/kawa
 grandiceps,tkw/grandiceps
 isopad,magpie/isopad
+milk,spaceman/2_milk
