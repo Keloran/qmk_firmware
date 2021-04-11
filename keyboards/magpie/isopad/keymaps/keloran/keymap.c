@@ -23,20 +23,22 @@ enum custom_keycodes {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT( /* Base */
-    KBINFO
-  ),
+    [0] = LAYOUT( /* Base */
+        KBINFO
+    ),
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case KBINFO:
-      if (record->event.pressed) {
-        SEND_STRING("Beep");
-      } else {
-        SEND_STRING("Peeb");
-      }
-      break;
-  }
-  return true;
+    uprintf("KL: kc: 0x%04X, col: %u, row: %u\n", keycode, record->event.key.col, record->event.key.row);
+
+    switch (keycode) {
+        case KBINFO:
+            if (record->event.pressed) {
+                SEND_STRING("Beep");
+            } else {
+                SEND_STRING("Peeb");
+            }
+            break;
+    }
+    return true;
 }
