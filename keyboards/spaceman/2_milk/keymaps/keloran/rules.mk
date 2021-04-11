@@ -1,0 +1,2 @@
+BIT_C=yes
+CONSOLE_ENABLE=no
