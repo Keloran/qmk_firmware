@@ -61,7 +61,7 @@ enum best_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
         KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     KC_Y,   KC_U,     KC_I,      KC_O,      KC_P,
-        KC_ASH,   KC_FUN,   KC_NAV,   KC_RSM,   KC_G,     KC_H,   KC_LSM,   KC_K,      KC_J,      KC_CLSH,
+        KC_ASH,   KC_FUN,   KC_NAV,   KC_RSM,   KC_G,     KC_H,   KC_J,     KC_K,      KC_L,      KC_CLSH,
         KC_Z,     KC_XCT,   KC_CGU,   KC_V,     KC_B,     KC_N,   KC_M,     KC_CMGU,   KC_DTCT,   KC_SLSH,
                                         KC_ALW,            KC_BSPC
     ),
