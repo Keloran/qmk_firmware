@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Lower
 * ,----------------------------------------------------------------------------------------------------------------------.
-* |  Esc  |       |       |       |       |      |       |       |       |       |       |       |       |   Delete      |
+* |   `   |       |       |       |       |      |       |       |       |       |       |       |       |   Delete      |
 * |----------------------------------------------------------------------------------------------------------------------|
 * |    Tab    |       |  Up   |       |       |       |       |       |       |       |       |       |       |          |
 * |----------------------------------------------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * `----------------------------------------------------------------------------------------------------------------------'
 */
     [_LOWER] = LAYOUT_60_ansi(
-        KC_TRNS, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_DEL,
+        KC_GRV,  KC_NO,   KC_NO,   KC_NO,      KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_DEL,
         KC_TRNS, KC_NO,   KC_UP,   KC_NO,      KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,
         KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT,    KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,          KC_TRNS,
         KC_TRNS, KC_NO,   KC_NO,   KC_NO,      KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,                   KC_TRNS,
