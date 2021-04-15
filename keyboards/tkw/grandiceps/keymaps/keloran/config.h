@@ -1,0 +1,2 @@
+#define OLED_SCREENS 2
+#define OLED_SLEEP_TIMEOUT 30000
