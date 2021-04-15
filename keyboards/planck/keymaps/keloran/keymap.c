@@ -10,7 +10,7 @@
 #define RAISE MO(_RAISE)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-/* Qwerty
+/* Base
 * ,-----------------------------------------------------------------------------------.
 * |   Q  |   W  |   E  |   R  |   T  |  Tab | Bksp |   Y  |   U  |   I  |   O  |   P  |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * | Ctrl | Lead | Alt  | GUI  |Lower |    Space    |Raise |   /  | Left | Down |Right |
 * `-----------------------------------------------------------------------------------'
 */
-  [_QWERTY] = LAYOUT_ortho_4x12(
+  [_BASE] = LAYOUT_ortho_4x12(
         KC_Q,      KC_W,    KC_E,    KC_R,    KC_T,       KC_TAB,    KC_BSPACE, KC_Y,       KC_U,     KC_I,     KC_O,   KC_P,
         KC_A,      KC_S,    KC_D,    KC_F,    KC_G,       KC_ESCAPE, KC_QUOTE,  KC_H,       KC_J,     KC_K,     KC_L,   KC_SCOLON,
         KC_Z,      KC_X,    KC_C,    KC_V,    KC_B,       KC_LSHIFT, KC_ENTER,  KC_N,       KC_M,     KC_COMMA, KC_DOT, KC_SLASH,
@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 */
     [_ADJUST] = LAYOUT_ortho_4x12(
         MO(_MISC), KC_NO,       WORKMAN_LAYER, OLDFPS_LAYER, KC_NO,      OSL(_FKEYS), KC_NO, KC_NO,      KC_NO,   KC_NO,   KC_NO, RESET,
-        KC_NO,     KC_NO,       QWERTY_LAYER,  CIV_LAYER,    KC_NO,      KC_NO,       KC_NO, RGB_TOG,    RGB_VAI, RGB_VAD, KC_NO, KC_NO,
+        KC_NO,     KC_NO,       BASE_LAYER,  CIV_LAYER,    KC_NO,      KC_NO,       KC_NO, RGB_TOG,    RGB_VAI, RGB_VAD, KC_NO, KC_NO,
         KC_NO,     KC_NO,       KC_NO,         KC_NO,        KC_NO,      KC_NO,       KC_NO, RGB_MOD,    RGB_HUI, RGB_HUD, KC_NO, KC_NO,
         KC_NO,     WEBUSB_PAIR, KC_NO,         KC_NO,        MO(_LOWER), KC_NO,       KC_NO, MO(_RAISE), RGB_SPI, RGB_SPD, KC_NO, KC_NO
     ),

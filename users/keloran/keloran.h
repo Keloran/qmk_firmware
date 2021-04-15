@@ -25,7 +25,7 @@ enum keyCodes {
     LINUX_GUI,
 
     // Layers
-    QWERTY_LAYER,
+    BASE_LAYER,
     WORKMAN_LAYER,
     OLDFPS_LAYER,
     CIV_LAYER,
@@ -56,7 +56,7 @@ void layer_color(layer_state_t layer);
 layer_state_t layer_state_set_user(layer_state_t state);
 enum layer_number {
     // Typing
-    _QWERTY = 0,
+    _BASE = 0,
     _WORKMAN,
 
     // Game

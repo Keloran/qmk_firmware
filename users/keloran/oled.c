@@ -142,8 +142,8 @@ void draw_current_layer(void) {
 
     uint8_t layerID = biton32(layer_state);
     switch (myCurrentLayer) {
-        case _QWERTY:
-            snprintf(currentLayerLabel, sizeof(currentLayerLabel), "Layer:%s   ", "qwerty");
+        case _BASE:
+            snprintf(currentLayerLabel, sizeof(currentLayerLabel), "Layer:%s   ", "base");
             break;
         case _WORKMAN:
             snprintf(currentLayerLabel, sizeof(currentLayerLabel), "Layer:%s  ", "workman");

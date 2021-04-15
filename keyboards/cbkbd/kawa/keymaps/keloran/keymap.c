@@ -18,7 +18,6 @@
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
-    _BASE = 0,
     _ALWAYS,
     _FUNC,
     _NAV,

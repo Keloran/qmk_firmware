@@ -25,7 +25,7 @@ enum hs60_custom {
 //This is the ANSI version of the PCB
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-/* Qwerty
+/* Base
 * ,----------------------------------------------------------------------------------------------------------------------.
 * |  Esc  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |   0   |   -   |   =   |   Backspace  |
 * |----------------------------------------------------------------------------------------------------------------------|
@@ -35,10 +35,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |----------------------------------------------------------------------------------------------------------------------|
 * |     Shift      |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   |       Shift         |
 * |----------------------------------------------------------------------------------------------------------------------|
-* |   Ctrl  |   Alt   |   GUI   |                     Space                       |  Lower  |         |  Misc  |  Raise  |
+* |   Ctrl  |   Alt   |   GUI   |                     Space                       |  Lower  |   Misc  |  Misc  |  Raise  |
 * `----------------------------------------------------------------------------------------------------------------------'
 */
-    [_QWERTY] = LAYOUT_60_ansi(
+    [_BASE] = LAYOUT_60_ansi(
         KC_GESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,       KC_0,         KC_MINS, KC_EQL,       KC_BSPC,
         KC_TAB,     KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,       KC_P,         KC_LBRC, KC_RBRC,      KC_BSLS,
         SUPERCAPS,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,       KC_SCLN,      KC_QUOT,               KC_ENT,
@@ -111,7 +111,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    //uprintf("KL: kc: 0x%04X, col: %u, row: %u\n", keycode, record->event.key.col, record->event.key.row);
+    uprintf("KL: kc: 0x%04X, col: %u, row: %u\n", keycode, record->event.key.col, record->event.key.row);
 
     if (record->event.pressed) {
         update_wpm(keycode);

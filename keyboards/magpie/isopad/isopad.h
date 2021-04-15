@@ -1,4 +1,4 @@
-/* Copyright 2019 Ryota Goto
+/* Copyright 2019 Magpie
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,8 +26,8 @@
  * represents the switch matrix.
  */
 #define LAYOUT( \
-    K0 \
+    KA1 \
 ) \
 { \
-    { K0 } \
+    { KA1 } \
 }

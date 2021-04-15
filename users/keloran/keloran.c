@@ -51,8 +51,8 @@ void set_layer(layer_state_t layer) {
 void switch_layer(uint16_t keycode) {
     switch (keycode) {
         // Layers
-        case QWERTY_LAYER:
-            set_layer(_QWERTY);
+        case BASE_LAYER:
+            set_layer(_BASE);
             break;
         case WORKMAN_LAYER:
             set_layer(_WORKMAN);

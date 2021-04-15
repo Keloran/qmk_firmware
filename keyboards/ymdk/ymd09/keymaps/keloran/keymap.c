@@ -3,7 +3,7 @@
 #include "keloran.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_QWERTY] = LAYOUT(
+    [_BASE] = LAYOUT(
         KC_KP_7, LT(_RAISE, KC_KP_8), KC_KP_9,
         KC_KP_4, LT(_LOWER, KC_KP_5), KC_KP_6,
         KC_KP_1, KC_KP_2,             KC_KP_3

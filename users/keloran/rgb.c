@@ -15,7 +15,7 @@ void rgb_led_state(uint8_t caps_state) {
 }
 
 void rgb_layer_colors(layer_state_t state) {
-    rgblight_set_layer_state(3, layer_state_cmp(state, _QWERTY));
+    rgblight_set_layer_state(3, layer_state_cmp(state, _BASE));
     rgblight_set_layer_state(2, layer_state_cmp(state, _LOWER));
     rgblight_set_layer_state(1, layer_state_cmp(state, _RAISE));
 }

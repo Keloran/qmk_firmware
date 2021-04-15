@@ -1,8 +1,18 @@
 #include QMK_KEYBOARD_H
+#include "keloran.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-      [0] = LAYOUT(
-          KC_Z,
-          KC_X
-          )
+/*
+ *     /\
+ *    /  \
+ *  ,------.
+ *  | Misc |
+ *  ,------.
+ *  |  X  |
+ *  `------'
+ */
+      [_BASE] = LAYOUT(
+        TD(MISC_TAP ),
+        KC_X
+      )
 };
