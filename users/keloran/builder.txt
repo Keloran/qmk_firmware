@@ -17,3 +17,4 @@ kawa,cbkbd/kawa
 grandiceps,tkw/grandiceps
 isopad,magpie/isopad
 milk,spaceman/2_milk
+mbmacro,handwired/mechboards_micropad
