@@ -30,6 +30,7 @@ enum keyCodes {
     OLDFPS_LAYER,
     CIV_LAYER,
     MISC_GAME_LAYER,
+    MISC_LAYER,
 
     // Coding
     CODE_GO_ASSIGN,

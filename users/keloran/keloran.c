@@ -66,6 +66,9 @@ void switch_layer(uint16_t keycode) {
         case MISC_GAME_LAYER:
             set_layer(_MISC_GAME);
             break;
+        case MISC_LAYER:
+            set_layer(_MISC);
+            break;
     }
 }
 
