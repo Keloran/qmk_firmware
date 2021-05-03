@@ -179,10 +179,9 @@ void send_meet_camera(void) {
 bool led_update_user(led_t led_state) {
     static uint8_t caps_state = 0;
     if (caps_state != led_state.caps_lock) {
-#ifdef OLED_SCREENS
-    #ifdef OLED_DRIVER_ENABLE
+#if defined(OLED_SCREENS) && defined(OLED_DRIVER_ENABLE)
         oled_led_state(caps_state);
-    #endif#endif
+#endif
 #ifdef BIT_C
         bitc_led_state(caps_state);
 #endif
