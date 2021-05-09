@@ -100,7 +100,7 @@ void coding_macro(uint16_t keycode) {
             break;
     }
 }
-void custom_funcs(uint16_t keycode) {
+void custom_funcs(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         // Operating System
         case MAC_EXPOSE:
@@ -123,6 +123,9 @@ void custom_funcs(uint16_t keycode) {
             break;
         case MEET_CAMERA:
             send_meet_camera();
+            break;
+        case SUPERCAPS:
+            super_caps(record);
             break;
     }
 }
@@ -172,6 +175,22 @@ void send_meet_mute(void) {
 void send_meet_camera(void) {
     if (myOperatingSys == _macOS) {
         tap_code16(G(KC_E));
+    }
+}
+
+void super_caps(keyrecord_t *record) {
+    static uint16_t caps_timer;
+    if (record->event.pressed) {
+        caps_timer = timer_read();
+        unregister_code(KC_ESC);
+        unregister_code(KC_CAPS);
+    } else {
+        if (timer_elapsed(caps_timer) < CAPS_TIMER) {
+            register_code(KC_ESC);
+            unregister_code(KC_ESC);
+        } else {
+            register_code(KC_CAPS);
+        }
     }
 }
 

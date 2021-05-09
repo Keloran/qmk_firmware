@@ -6,6 +6,8 @@
 #include "rotary.h"
 #include "oled.h"
 
+#define CAPS_TIMER 300
+
 // Words Per Minute
 void update_wpm(uint16_t keycode);
 
@@ -42,6 +44,7 @@ enum keyCodes {
     // General
     POUND_SIGN,
     POUND_SIGN_WIN,
+    SUPERCAPS,
 
     // Google Meet
     MEET_MUTE,
@@ -89,7 +92,7 @@ enum operatingSysDef {
 
 // Macros
 void coding_macro(uint16_t keycode);
-void custom_funcs(uint16_t keycode);
+void custom_funcs(uint16_t keycode, keyrecord_t *record);
 void send_not_equal(void);
 void send_go_assign(void);
 void send_fat_arrow(void);
@@ -101,3 +104,4 @@ void send_go_channel(void);
 void send_pound_sign(int OS);
 void send_meet_mute(void);
 void send_meet_camera(void);
+void super_caps(keyrecord_t *record);

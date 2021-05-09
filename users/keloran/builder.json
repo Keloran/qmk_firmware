@@ -1,0 +1,84 @@
+{
+  "user": "keloran",
+  "boards": [
+    {
+      "name": "sofle"
+    },
+    {
+      "name": "lily58"
+    },
+    {
+      "name": "qaz"
+    },
+    {
+      "name": "ut472"
+    },
+    {
+      "name": "nibble",
+      "path": "nullbitsco/nibble"
+    },
+    {
+      "name": "pocket",
+      "path": "evyd13/pockettype"
+    },
+    {
+      "name": "planck",
+      "path": "planck/ez/glow"
+    },
+    {
+      "name": "hs60",
+      "path": "hs60/v2/ansi"
+    },
+    {
+      "name": "mercutio",
+      "path": "mechwild/mercutio"
+    },
+    {
+      "name": "gherkin",
+      "path": "40percentclub/gherkin"
+    },
+    {
+      "name": "numpad",
+      "path": "ymdk_np21"
+    },
+    {
+      "name": "satan",
+      "path": "yd60mq"
+    },
+    {
+      "name": "macro9",
+      "path": "ymdk/ymd09/32a"
+    },
+    {
+      "name": "dz60"
+    },
+    {
+      "name": "lumberjack",
+      "path": "peej/lumberjack"
+    },
+    {
+      "name": "kawa",
+      "path": "cbkbd/kawa"
+    },
+    {
+      "name": "grandiceps",
+      "path": "tkw/grandiceps"
+    },
+    {
+      "name": "isopad",
+      "path": "magpie/isopad"
+    },
+    {
+      "name": "milk",
+      "path": "spaceman/2_milk"
+    },
+    {
+      "name": "mbmacro",
+      "path": "handwired/mechboards_micropad"
+    },
+    {
+      "name": "katana",
+      "path": "rominronin/katana60/rev2"
+    }
+  ]
+}

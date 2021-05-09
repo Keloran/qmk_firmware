@@ -1,4 +1,4 @@
-name: Keloran
+name: Builder
 
 on:
   push:

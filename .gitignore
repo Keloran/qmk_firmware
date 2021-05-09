@@ -83,4 +83,6 @@ user_song_list.h
 # Keloran stuff
 builder
 builder.txt
+builder.json
 !users/keloran/builder.txt
+!users/keloran/builder.json

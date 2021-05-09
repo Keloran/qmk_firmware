@@ -18,9 +18,6 @@
 #include "keloran.h"
 #include "print.h"
 
-enum hs60_custom {
-    SUPERCAPS = SAFE_RANGE
-};
 
 //This is the ANSI version of the PCB
 
@@ -118,25 +115,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         coding_macro(keycode);
         switch_layer(keycode);
         custom_funcs(keycode);
-    }
-
-    static uint16_t caps_timer;
-    switch(keycode) {
-        case SUPERCAPS:
-            if (record->event.pressed) {
-                caps_timer = timer_read();
-                unregister_code(KC_ESC);
-                unregister_code(KC_CAPS);
-            } else {
-                if (timer_elapsed(caps_timer) < CAPS_TIMER) {
-                    register_code(KC_ESC);
-                    unregister_code(KC_ESC);
-                } else {
-                    register_code(KC_CAPS);
-                }
-            }
-
-            return false;
     }
 
     return true;

@@ -18,3 +18,4 @@ grandiceps,tkw/grandiceps
 isopad,magpie/isopad
 milk,spaceman/2_milk
 mbmacro,handwired/mechboards_micropad
+katana,rominronin/katana60/rev2
