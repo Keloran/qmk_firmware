@@ -279,7 +279,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
         coding_macro(keycode);
         switch_layer(keycode);
-        custom_funcs(keycode);
+        custom_funcs(keycode, record);
     }
 
     return true;

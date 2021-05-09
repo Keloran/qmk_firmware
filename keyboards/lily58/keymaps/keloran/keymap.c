@@ -184,7 +184,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         update_wpm(keycode);
         coding_macro(keycode);
         switch_layer(keycode);
-        custom_funcs(keycode);
+        custom_funcs(keycode, record);
     }
 
   return true;

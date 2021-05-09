@@ -104,4 +104,3 @@ void send_go_channel(void);
 void send_pound_sign(int OS);
 void send_meet_mute(void);
 void send_meet_camera(void);
-void super_caps(keyrecord_t *record);

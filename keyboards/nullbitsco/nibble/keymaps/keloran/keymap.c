@@ -118,10 +118,26 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         update_wpm(keycode);
         coding_macro(keycode);
         switch_layer(keycode);
-        custom_funcs(keycode);
+        custom_funcs(keycode, record);
     }
 
-    switch(keycode) {
+    static uint16_t caps_timer;
+    switch (keycode) {
+        case SUPERCAPS:
+            if (record->event.pressed) {
+                caps_timer = timer_read();
+                unregister_code(KC_ESC);
+                unregister_code(KC_CAPS);
+            } else {
+                if (timer_elapsed(caps_timer) < CAPS_TIMER) {
+                    register_code(KC_ESC);
+                    unregister_code(KC_ESC);
+                } else {
+                    register_code(KC_CAPS);
+                }
+            }
+            return false;
+
         case RM_1: //remote macro 1
             if (record->event.pressed) {
             }

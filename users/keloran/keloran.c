@@ -124,9 +124,6 @@ void custom_funcs(uint16_t keycode, keyrecord_t *record) {
         case MEET_CAMERA:
             send_meet_camera();
             break;
-        case SUPERCAPS:
-            super_caps(record);
-            break;
     }
 }
 void send_not_equal(void) {
@@ -177,23 +174,6 @@ void send_meet_camera(void) {
         tap_code16(G(KC_E));
     }
 }
-
-void super_caps(keyrecord_t *record) {
-    static uint16_t caps_timer;
-    if (record->event.pressed) {
-        caps_timer = timer_read();
-        unregister_code(KC_ESC);
-        unregister_code(KC_CAPS);
-    } else {
-        if (timer_elapsed(caps_timer) < CAPS_TIMER) {
-            register_code(KC_ESC);
-            unregister_code(KC_ESC);
-        } else {
-            register_code(KC_CAPS);
-        }
-    }
-}
-
 
 bool led_update_user(led_t led_state) {
     static uint8_t caps_state = 0;
