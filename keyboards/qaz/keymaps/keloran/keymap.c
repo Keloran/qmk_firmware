@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 */
     [_LOWER] = LAYOUT_split_space(
         KC_DEL,  KC_NO,   CODE_GO_ASSIGN,      CODE_NOT_EQUAL, CODE_GO_CHANNEL, CODE_FAT_ARROW,   KC_NO,   KC_NO,   KC_NO,   KC_BSPC,
-        KC_ESC,  KC_NO,   CODE_ARROW_OPERATOR, KC_LPRN,        KC_RPRN,         KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_GESC, KC_NO,   CODE_ARROW_OPERATOR, KC_LPRN,        KC_RPRN,         KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_LSFT, KC_NO,   KC_LBRC,             KC_RBRC,        KC_HASH,         KC_NO,            KC_NO,   KC_NO,   KC_TRNS,
         KC_TRNS, KC_TRNS, KC_TRNS,             KC_NO,          KC_NO,           KC_TRNS,          KC_TRNS, KC_TRNS
     ),
