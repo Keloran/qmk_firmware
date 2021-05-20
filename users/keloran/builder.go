@@ -129,7 +129,7 @@ func main() {
 		boards, err := getBoardNames()
 		sort.Strings(boards)
 		if err != nil {
-			fmt.Printf("list - getBoardNames: %w\n", err)
+			fmt.Printf("list - getBoardNames: %+v\n", err)
 			return
 		}
 		for _, board := range boards {
@@ -141,14 +141,14 @@ func main() {
 	if *all {
 		boards, err := getBoardNames()
 		if err != nil {
-			fmt.Printf("all - getBoardNames: %w\n", err)
+			fmt.Printf("all - getBoardNames: %+v\n", err)
 			return
 		}
 
 		for _, board := range boards {
 			matched, err := matchBoard(board)
 			if err != nil {
-				fmt.Printf("all boards: %w\n", err)
+				fmt.Printf("all boards: %+v\n", err)
 				return
 			}
 
@@ -163,7 +163,7 @@ func main() {
 	if keyboard != "" {
 		matched, err := matchBoard(keyboard)
 		if err != nil {
-			fmt.Printf("build - matchBoard: %w\n", err)
+			fmt.Printf("build - matchBoard: %+v\n", err)
 			return
 		}
 
@@ -172,7 +172,7 @@ func main() {
 		} else {
 			boards, err := getBoardNames()
 			if err != nil {
-				fmt.Printf("build - getBoardNames: %w\n", err)
+				fmt.Printf("build - getBoardNames: %+v\n", err)
 				return
 			}
 			fmt.Printf("keyboard: %s not found\n", keyboard)
