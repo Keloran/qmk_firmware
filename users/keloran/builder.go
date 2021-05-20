@@ -191,6 +191,10 @@ func main() {
 func (b Board) build(silent bool) error {
 	fmt.Printf("Building: %s\n", b.Name)
 
+	if b.Path == "" {
+	    b.Path = b.Name
+	}
+
 	var out bytes.Buffer
 	var errBuf bytes.Buffer
 	cmd := exec.Command("make", fmt.Sprintf("%s:%s", b.Path, userName))
