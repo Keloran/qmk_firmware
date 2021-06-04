@@ -79,6 +79,10 @@
     {
       "name": "katana",
       "path": "rominronin/katana60/rev2"
+    },
+    {
+      "name": "sesame",
+      "path": "kb_elmo/sesame"
     }
   ]
 }
