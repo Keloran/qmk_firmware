@@ -83,6 +83,10 @@
     {
       "name": "sesame",
       "path": "kb_elmo/sesame"
+    },
+    {
+      "name": "murphpad",
+      "path": "mechwild/murphpad"
     }
   ]
 }
