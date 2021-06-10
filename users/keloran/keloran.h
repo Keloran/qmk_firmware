@@ -45,6 +45,7 @@ enum keyCodes {
     POUND_SIGN,
     POUND_SIGN_WIN,
     SUPERCAPS,
+    WEB,
 
     // Google Meet
     MEET_MUTE,
@@ -104,3 +105,4 @@ void send_go_channel(void);
 void send_pound_sign(int OS);
 void send_meet_mute(void);
 void send_meet_camera(void);
+void send_web_refresh(void);

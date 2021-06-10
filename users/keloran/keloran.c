@@ -124,6 +124,9 @@ void custom_funcs(uint16_t keycode, keyrecord_t *record) {
         case MEET_CAMERA:
             send_meet_camera();
             break;
+        case WEB:
+            send_web_refresh();
+            break;
     }
 }
 void send_not_equal(void) {
@@ -172,6 +175,12 @@ void send_meet_mute(void) {
 void send_meet_camera(void) {
     if (myOperatingSys == _macOS) {
         tap_code16(G(KC_E));
+    }
+}
+void send_web_refresh(void) {
+    tap_code(KC_F5);
+    if (myOperatingSys == _macOS) {
+        tap_code16(G(KC_R));
     }
 }
 
