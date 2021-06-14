@@ -15,6 +15,8 @@
  */
 
 #pragma once
+#define OLED_SLEEP_TIMEOUT 30000
+#define OLED_SCREENS 1
 
 /* Define custom font */
 //#define OLED_FONT_H "keyboards/mechwild/mercutio/lib/mercutiofont.c"
