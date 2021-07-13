@@ -87,6 +87,9 @@
     {
       "name": "murphpad",
       "path": "mechwild/murphpad"
+    },
+    {
+      "name": "alpha"
     }
   ]
 }
